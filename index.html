@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yt landing page</title>
+    <style>
+        .header{
+            background-color: white;
+            display: flex;
+            justify-content: start;
+            height: 30px;
+            gap: 320px;
+        }
+
+        .logo h1{
+            color:black;
+            position: relative;
+            left: 110px;
+            bottom: 20px;
+        }
+
+        #icon{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            left: 10px;
+            top: 20px;
+        }
+
+        #logo{
+            width: 80px;
+            height: 50px;
+            position: absolute;
+            left: 40px;
+            top:4px;
+        }
+
+        .elements{
+            display: flex;
+        }
+
+        .elements input{
+            width: 380px;
+            height: 30px;
+            padding: 5px;
+            border-radius: 15px;
+        }
+
+        .elements button{
+            height: 30px;
+            position: relative;
+            top: 8px;
+            left: 5px;
+        }
+
+        .elements img{
+            width: 50px;
+            height: 50px;
+            background-color: gray;
+            border-radius: 20px;
+            margin-left: 10px;
+        }
+
+        .sign img{
+            width: 30px;
+            height: 30px;
+            margin-right: 60px;
+            position: relative;
+            top: 10px;
+            right: 10px;
+        }
+
+        .sign button{
+            color: blue;
+            border-radius: 20px;
+            position: relative;
+            bottom: 28px;
+            padding: 10px;
+            left: 30px;
+        }
+
+        .tags{
+            display: flex;
+            margin-left: 60px;
+            margin-top: 0px;
+            gap:12px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .tags h4{
+            background-color: gray;
+            filter: opacity(90px);
+            padding: 6px;
+            border-radius: 10px;
+            width: auto;
+            height: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+        }
+
+        .tags button{
+            background-color: white;
+            width: 10px;
+            height: 20px;
+            font-size: 30px;
+            position: relative;
+            bottom: 5px;
+            color: black;
+            border-radius: 60%;
+            height: 80px;
+            border: 1px solid white;
+            font-weight: bold;
+        }
+
+       
+        .content-layout{
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .sidebar{
+            width: 100px;
+            flex-shrink: 0;
+            margin-top: 30px;
+        }
+
+        
+
+        main{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap:20px;
+            margin-left: 45px;
+            margin-top: 10px;
+            flex: 1;
+            min-width: 0;
+
+        }
+
+        .video img{
+            border-radius: 20px;
+            width: 400px;
+            height: 250px;
+            border: 1px solid black;
+        }
+
+        .video h2{
+            text-align: start;
+            font-size: 20px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <img id="icon" src="icon.png">
+            <img id="logo" src="images1.png">
+            <h1>YouTube</h1>
+        </div>
+
+        <div class="elements">
+            <input type="text" placeholder="Type Here">
+            <button>Search</button>
+            <img src="mic.png">
+        </div>
+
+        <div class="sign">
+            <img src="images-2-removebg-preview.png">
+            <button>Sign In</button>
+        </div>
+    </div>
+
+    <div class="content-layout">
+
+        <div class="sidebar">
+
+            <h3>⌂ Home</h3>
+            <h3>▶ Shorts</h3>
+            <hr>
+
+            <h3>Subscriptions ></h3>
+            <p>T Series</p>
+            <p>Vivaan Gupta</p>
+            <p>We Won Academy</p>
+            <p>RO 43 Gamer</p>
+
+            <hr>
+
+            <h3>You ></h3>
+            <p>Your Channel</p>
+            <p>History</p>
+            <p>Playlists</p>
+            <p>Watch Later</p>
+            <p>Liked Videos</p>
+
+        </div>
+
+        <div>
+
+            <div class="tags">
+                <h4>All</h4>
+                <h4>Ambient Music</h4>
+                <h4>Reverberation</h4>
+                <h4>Hans Zimmer</h4>
+                <h4>Mixes</h4>
+                <h4>Live</h4>
+                <h4>Orchestra</h4>
+                <h4>Electronica</h4>
+                <h4>Object-oriented-programming</h4>
+                <h4>Deep House</h4>
+                <h4>Rock Music</h4>
+                <h4>Recently Watched</h4>
+                <button> > </button>
+            </div>
+
+            <main>
+
+                <div class="video">
+                    <img src="t1.jpg">
+                    <h2>WildCard In Generics | Coder Army</h2>
+                    <p><pre> Coder Army  125K  2 days ago</pre></p>
+                </div>
+
+                <div class="video">
+                    <img src="th2.jpg">
+                    <h2>Music Track Sound | Original Sound Track</h2>
+                    <p><pre> Ambient World  2.4M  1 week ago</pre></p>
+                </div>
+
+                <div class="video">
+                    <img src="th5.jpg">
+                    <h2>Flowstate Music Video | Looped Version</h2>
+                    <p><pre> Flowstate  850K  3 weeks ago</pre></p>
+                </div>
+
+                <div class="video">
+                    <img src="th4.jpg">
+                    <h2>Sound Beats to listen while focusing</h2>
+                    <p><pre> Film Theory  1.2M  5 days ago</pre></p>
+                </div>
+
+                <div class="video">
+                    <img src="th5.jpg">
+                    <h2>Flowstate Music Video | Remix Version</h2>
+                    <p><pre> CodeWithHarry 320K 4 days ago</pre></p>
+                </div>
+
+                <div class="video">
+                    <img src="th6.jpg">
+                    <h2>Music To Calm Your Ears | Breddy Jason</h2>
+                    <p><pre> Cinema Vault 5.6M 2 weeks ago</pre></p>
+                </div>
+
+                <div class="video">
+                    <img src="th7.jpg">
+                    <h2>Music to Feel Like Newton While Studying</h2>
+                    <p><pre> Web Dev Simplified 900K 1 month ago</pre></p>
+                </div>
+
+                <div class="video">
+                    <img src="th8.jpg">
+                    <h2>1 Hour of soothing sounds to calm mind</h2>
+                    <p><pre> Nature Sounds 3.1M 3 days ago</pre></p>
+                </div>
+
+                <div class="video">
+                    <img src="th100.jpeg">
+                    <h2>Edit Videos for Free | YT Editor</h2>
+                    <p><pre> Study With Me 450K 6 days ago</pre></p>
+                </div>
+
+                <div class="video">
+                    <img src="th80.jpg">
+                    <h2>You are studying like a medieval philosopher</h2>
+                    <p><pre> Hans Zimmer Music 8.2M 2 months ago</pre></p>
+                </div>
+
+                <div class="video">
+                    <img src="th82.jpg">
+                    <h2>NPSV - Slowed/Reverb</h2>
+                    <p><pre> CodeWithHarry 210K 1 week ago</pre></p>
+                </div>
+
+                <div class="video">
+                    <img src="th98.jpeg">
+                    <h2>How to Use YT Studio</h2>
+                    <p><pre> Motivation Hub 780K 12 days ago</pre></p>
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
